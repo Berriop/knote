@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python \"C:/Users/juanp/Downloads/extract.py\")",
+      "Bash(python3 \"C:/Users/juanp/Downloads/extract.py\")",
+      "Bash(powershell -Command ' *)",
+      "Bash(cmd.exe /c 'powershell -Command \"$zip = [System.IO.Compression.ZipFile]::OpenRead\\('\\\\''C:\\\\Users\\\\juanp\\\\Downloads\\\\Developing and deploying Spring Boot microservices on Kubernetes.docx'\\\\''\\); $entry = $zip.Entries | Where-Object { $_.FullName -eq '\\\\''word/document.xml'\\\\'' }; $stream = $entry.Open\\(\\); $reader = New-Object System.IO.StreamReader\\($stream\\); $content = $reader.ReadToEnd\\(\\); $zip.Dispose\\(\\); $text = $content -replace '\\\\''<[^>]+>'\\\\'', '\\\\'' '\\\\'' -replace '\\\\''\\\\s+'\\\\'', '\\\\'' '\\\\''; $text.Substring\\(0, [Math]::Min\\(20000, $text.Length\\)\\)\"')",
+      "Read(//mnt/c/Windows/System32/**)",
+      "Read(//c/Windows/System32/**)"
+    ]
+  }
+}
